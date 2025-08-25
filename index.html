@@ -241,7 +241,76 @@ textarea:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.2);
 }
+.timeline-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f9f9ff 0%, #ffffff 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4B0082;
+}
 
+.timeline-container h4 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    color: #4B0082;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #4169E1;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #4169E1;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #4B0082;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
 @media (min-width:450px) and (orientation: landscape) {
 
         .pc-responsive{
@@ -304,7 +373,35 @@ textarea:focus {
     <h3>Celebrating Samia Afroz: A Vision of Grace</h3></div>
         <div>
                 <img src= "https://raw.githubusercontent.com/AlifKhan1911391/The-most-beautiful-girl-in-the-world/refs/heads/main/Screenshot_20250426-232801.jpg" title="Samia Afroz" alt="Portrait of Samia Afroz" style="width:95%; height:auto;" id="img1">
-        <br><br><br>
+        <div class="timeline-container">
+    <h4>Our Journey Together</h4>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">Second half of 2022</div>
+            <div class="timeline-content">First saw her at school</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">25 Jan 2023</div>
+            <div class="timeline-content">First successful conversation</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">4 Jun 2023</div>
+            <div class="timeline-content">First proposal in front of school</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">28 Aug 2023</div>
+            <div class="timeline-content">Second proposal with a rose and speical walk from Chillers Den to Zirani bus stand</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">15 Oct 2024</div>
+            <div class="timeline-content">She wished me Happy Birthday</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">6 Feb 2024</div>
+            <div class="timeline-content">First selfie together</div>
+        </div>
+    </div>
+</div>
         <div class="poem-container">
            <h4>The Soul That Illuminates</h4>
   <pre>
@@ -350,7 +447,8 @@ My breath, my dream, my destiny.
         </div>
         </div><br><br>
                 <img src="https://raw.githubusercontent.com/AlifKhan1911391/The-most-beautiful-girl-in-the-world/refs/heads/main/1745763974141.jpg" title="Samia Afroz" alt="Another portrait of Samia Afroz" style="width:95%; height:auto;" id="img2">
-
+<div class="poem-container"><p>Samia, your beauty is a poetry the world can never fully capture—your eyes are galaxies where I lose myself, your smile is the dawn that ends every darkness, and your hair flows like midnight silk kissed by the wind. I could write a thousand verses about you, yet my soul always whispers the same truth—I love you, Samia, for you are not just beautiful… you are my eternity.
+</p></div>
         <div id="form">
                 <p id="offer">Inspired by what you've seen? I craft personalized poetic tributes that capture the essence of your special someone. Share some details, and I'll create a unique piece that celebrates her beauty.</p><br><br><br><br>
             <p id="get-detail">Share details about your special person for a custom poem:</p>
